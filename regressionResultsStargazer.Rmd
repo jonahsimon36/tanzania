@@ -10,46 +10,46 @@ knitr::opts_chunk$set(echo = FALSE)
 ## R Markdown
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Mon, Apr 16, 2018 - 07:09:37
+% Date and time: Mon, Apr 16, 2018 - 22:27:38
 \begin{table}[!htbp] \centering 
-  \caption{Regression Models} 
+  \caption{Regression Table} 
   \label{} 
 \begin{tabular}{@{\extracolsep{5pt}}lccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
  & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
 \cline{2-4} 
-\\[-1.8ex] & \multicolumn{3}{c}{h22} \\ 
+\\[-1.8ex] & \multicolumn{3}{c}{Malaria (fever)} \\ 
  & Basic & Partial & Full \\ 
 \\[-1.8ex] & (1) & (2) & (3)\\ 
 \hline \\[-1.8ex] 
- deforestation0YearLag & $-$1.412$^{*}$ & $-$1.063 & $-$0.361 \\ 
-  & (0.746) & (0.748) & (0.811) \\ 
+ deforestation0YearLag & $-$0.015$^{**}$ & $-$0.011 & $-$0.006 \\ 
+  & (0.007) & (0.007) & (0.008) \\ 
   & & & \\ 
- deforestation1YearLag & $-$0.043 & $-$0.598 & 1.472 \\ 
-  & (1.061) & (1.066) & (1.112) \\ 
+ deforestation1YearLag & $-$0.002 & $-$0.008 & 0.014 \\ 
+  & (0.011) & (0.011) & (0.011) \\ 
   & & & \\ 
- deforestation2YearLag & $-$0.578 & $-$1.010 & $-$0.985 \\ 
-  & (0.659) & (0.662) & (0.700) \\ 
+ deforestation2YearLag & $-$0.007 & $-$0.013$^{*}$ & $-$0.010 \\ 
+  & (0.007) & (0.007) & (0.007) \\ 
   & & & \\ 
- deforestation3YearLag & $-$0.314 & 0.887 & 1.295$^{**}$ \\ 
-  & (0.584) & (0.603) & (0.632) \\ 
+ deforestation3YearLag & $-$0.002 & 0.010$^{*}$ & 0.010 \\ 
+  & (0.006) & (0.006) & (0.006) \\ 
   & & & \\ 
- Constant & 0.199$^{***}$ & 0.153$^{***}$ & 0.234$^{***}$ \\ 
-  & (0.005) & (0.009) & (0.037) \\ 
+ Constant & 0.191$^{***}$ & 0.151$^{***}$ & 0.154$^{***}$ \\ 
+  & (0.006) & (0.009) & (0.040) \\ 
   & & & \\ 
 \hline \\[-1.8ex] 
 Year Fixed Effects & No & Yes & Yes \\ 
 Seasonality & No & Yes & Yes \\ 
 HH and indiv controls & No & No & Yes \\ 
 \hline \\[-1.8ex] 
-Observations & 15,713 & 15,713 & 15,713 \\ 
-R$^{2}$ & 0.001 & 0.006 & 0.036 \\ 
-Adjusted R$^{2}$ & 0.0004 & 0.005 & 0.032 \\ 
-Residual Std. Error & 0.398 (df = 15707) & 0.397 (df = 15696) & 0.392 (df = 15642) \\ 
-F Statistic & 2.121$^{*}$ (df = 5; 15707) & 6.100$^{***}$ (df = 16; 15696) & 8.455$^{***}$ (df = 70; 15642) \\ 
+Observations & 14,027 & 14,027 & 14,027 \\ 
+R$^{2}$ & 0.001 & 0.007 & 0.036 \\ 
+Adjusted R$^{2}$ & 0.0004 & 0.006 & 0.032 \\ 
+Residual Std. Error & 0.396 (df = 14021) & 0.395 (df = 14010) & 0.389 (df = 13956) \\ 
+F Statistic & 2.217$^{**}$ (df = 5; 14021) & 6.081$^{***}$ (df = 16; 14010) & 7.540$^{***}$ (df = 70; 13956) \\ 
 \hline 
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
-\end{table} 
+\end{table}
