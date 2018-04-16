@@ -18,6 +18,11 @@ for (year in c(7,8,9,10)){
   base10<- left_join(base10,get(sprintf("DHS2010_LossYear%s", year)), by = c("v001" = "cluster"))
 }
 
+# join tree cover to base 10
+treeCover2010 <- mutate(treeCover2010, cluster = as.numeric(substr(treeCover2010$DHSID, 14-2, 14)))
+treeCover2010 <- rename(treeCover2010, treeCover2000)
+base10 <- left_join(base10, select(treeCover2010, cluster, treeCover2000), by = c("v001" = "cluster"))
+
 # construct base15
 base15 <- select(children2015, caseid, midx, v001, v007, v024, v025, v113, v116, v119, v127, v128, v129, v137, v190, ml0, h22)
 base15 <- na.omit(base15)
@@ -32,6 +37,12 @@ for (year in c(13,14,15,16)){
   assign(sprintf("DHS2015_LossYear%s", year), select(get(sprintf("DHS2015_LossYear%s", year)),cluster,sprintf("defLag%s", 16 - year)))
   base15<- left_join(base15,get(sprintf("DHS2015_LossYear%s", year)), by = c("v001" = "cluster"))
 }
+
+# join tree cover to base 10
+treeCover2015 <- mutate(treeCover2015, cluster = as.numeric(substr(treeCover2015$DHSID, 14-2, 14)))
+treeCover2015 <- rename(treeCover2015, treeCover2000)
+base15 <- left_join(base15, select(treeCover2015, cluster, treeCover2000), by = c("v001" = "cluster"))
+
 
 # Bind 2010 and 2015 dataframes
 base <- bind_rows(base10, base15)
