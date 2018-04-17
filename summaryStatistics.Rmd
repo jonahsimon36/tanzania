@@ -1,0 +1,54 @@
+---
+output: pdf_document
+---
+
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Apr 17, 2018 - 00:40:07
+\begin{table}[!htbp] \centering 
+  \caption{Summary Statistics} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+Survey Year Deforestation | Fever  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\
+Survey Year Deforestation | No Fever  & 11,301 & 0.296 & 0.600 & 0.000 & 8.990 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Apr 17, 2018 - 00:40:07
+\begin{table}[!htbp] \centering 
+  \caption{Summary Statistics} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+Survey Year Deforestation | Fever  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\
+Survey Year Deforestation | No Fever  & 11,301 & 0.296 & 0.600 & 0.000 & 8.990 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
+
+
+
+<!-- % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu -->
+<!-- % Date and time: Tue, Apr 17, 2018 - 00:40:47 -->
+<!-- \begin{table}[!htbp] \centering  -->
+<!--   \caption{}  -->
+<!--   \label{}  -->
+<!-- \begin{tabular}{@{\extracolsep{5pt}}lccccc}  -->
+<!-- \\[-1.8ex]\hline  -->
+<!-- \hline \\[-1.8ex]  -->
+<!-- Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\  -->
+<!-- \hline \\[-1.8ex]  -->
+<!--  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\  -->
+<!-- X1.deforestation1YearLag & 2,726 & 0.210 & 0.403 & 0.000 & 4.156 \\  -->
+<!-- \hline \\[-1.8ex]  -->
+<!-- \end{tabular}  -->
+<!-- \end{table}  -->

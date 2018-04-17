@@ -33,7 +33,12 @@ ggplot(melt(data.frame(def0NoFev$deforestation0YearLag,def0Fev$deforestation0Yea
 basePlot <- base %>% mutate(h22 = factor(h22))
 basePlot %>% ggplot(aes(x = deforestation0YearLag), size = 10) + xlab("Deforestation in Survey Year") + labs(title = "Survey Year Deforestation by Malaria", subtitle = "Probability density curves") + scale_color_discrete(name="", labels = c("Malaria", "No Malaria")) + geom_density(aes(color=h22))
 
-def0Fev <- basePlot %>% select(h22,deforestation0YearLag)
+def0Fev <- basePlot %>% select(h22,deforestation0YearLag, deforestation1YearLag)
 
+tapply(basePlot$deforestation0YearLag, basePlot$h22, describe)
+X <- split(def0Fev, basePlot$h22)
+
+stargazer(data.frame(X[1]), type = "latex")
+stargazer(data.frame(X[2]), type = "latex")
 #Old
 #full_model <- lm(h22~.-caseid - midx - v001, base.d)
