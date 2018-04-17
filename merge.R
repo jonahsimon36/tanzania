@@ -37,13 +37,13 @@ for (year in c(13,14,15,16)){
   potato <- sprintf("deforestation%sYearLag", 16 - year)
   assign(sprintf("DHS2015_LossYear%s", year), mutate(get(sprintf("DHS2015_LossYear%s", year)), !!potato := 100*COUNT/102023)) # divide COUNT by 102093 to get percentage of cell deforested
   assign(sprintf("DHS2015_LossYear%s", year), select(get(sprintf("DHS2015_LossYear%s", year)),cluster,sprintf("deforestation%sYearLag", 16 - year)))
-  base15<- left_join(base15,get(sprintf("DHS2015_LossYear%s", year)), by = c("v001" = "cluster"))
+  base15<- inner_join(base15,get(sprintf("DHS2015_LossYear%s", year)), by = c("v001" = "cluster"))
 }
 
 # join tree cover to base 10
 treeCover2015 <- mutate(treeCover2015, cluster = as.numeric(substr(treeCover2015$DHSID, 14-2, 14)))
 treeCover2015 <- rename(treeCover2015, treeCover2000 = MEAN)
-base15 <- left_join(base15, select(treeCover2015, cluster, treeCover2000), by = c("v001" = "cluster"))
+base15 <- inner_join(base15, select(treeCover2015, cluster, treeCover2000), by = c("v001" = "cluster"))
 
 
 # Bind 2010 and 2015 dataframes

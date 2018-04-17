@@ -6,34 +6,36 @@ output: pdf_document
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
 % Date and time: Tue, Apr 17, 2018 - 00:40:07
 \begin{table}[!htbp] \centering 
-  \caption{Summary Statistics} 
+  \caption{Summary Statistics for Deforestation in Survey Year} 
   \label{} 
 \begin{tabular}{@{\extracolsep{5pt}}lccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
 Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
 \hline \\[-1.8ex] 
-Survey Year Deforestation | Fever  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\
-Survey Year Deforestation | No Fever  & 11,301 & 0.296 & 0.600 & 0.000 & 8.990 \\ 
+Percent Deforested | Fever  & 2,256 & 0.315 & 0.615 & 0.001 & 8.990 \\
+Percent Deforested | No Fever  & 9,231 & 0.361 & 0.646 & 0.001 & 8.990 \\ 
 \hline \\[-1.8ex] 
 \end{tabular} 
 \end{table}
 
-% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Apr 17, 2018 - 00:40:07
-\begin{table}[!htbp] \centering 
-  \caption{Summary Statistics} 
-  \label{} 
-\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
-\\[-1.8ex]\hline 
-\hline \\[-1.8ex] 
-Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
-\hline \\[-1.8ex] 
-Survey Year Deforestation | Fever  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\
-Survey Year Deforestation | No Fever  & 11,301 & 0.296 & 0.600 & 0.000 & 8.990 \\ 
-\hline \\[-1.8ex] 
-\end{tabular} 
-\end{table}
+
+
+<!-- % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu -->
+<!-- % Date and time: Tue, Apr 17, 2018 - 00:40:07 -->
+<!-- \begin{table}[!htbp] \centering  -->
+<!--   \caption{Summary Statistics}  -->
+<!--   \label{}  -->
+<!-- \begin{tabular}{@{\extracolsep{5pt}}lccccc}  -->
+<!-- \\[-1.8ex]\hline  -->
+<!-- \hline \\[-1.8ex]  -->
+<!-- Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\  -->
+<!-- \hline \\[-1.8ex]  -->
+<!-- Survey Year Deforestation | Fever  & 2,726 & 0.262 & 0.571 & 0.000 & 8.990 \\ -->
+<!-- Survey Year Deforestation | No Fever  & 11,301 & 0.296 & 0.600 & 0.000 & 8.990 \\  -->
+<!-- \hline \\[-1.8ex]  -->
+<!-- \end{tabular}  -->
+<!-- \end{table} -->
 
 
 
