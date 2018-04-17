@@ -18,27 +18,30 @@ stargazer(small_model, middle_model, full_model, column.labels = c("Basic", "Par
 #base %>% ggplot(aes(x = deforestation0YearLag, y = h22)) + geom_point() + stat_smooth(method = "lm", col = "red")
 
 #Create density plots
-def0NoFev <- filter(select(base, h22, deforestation0YearLag), h22 == 0)
-def0Fev <- filter(select(base, h22, deforestation0YearLag), h22 == 1)
+#def0NoFev <- filter(select(base, h22, deforestation0YearLag), h22 == 0)
+#def0Fev <- filter(select(base, h22, deforestation0YearLag), h22 == 1)
 
-base %>% ggplot(aes(x = deforestation0YearLag)) + geom_density()
+#base %>% ggplot(aes(x = deforestation0YearLag)) + geom_density()
 
-def0NoFev%>% ggplot(aes(x = deforestation0YearLag)) + labs(title = "No Fev") + geom_density()
-def0Fev%>% ggplot(aes(x = deforestation0YearLag)) + labs(title = "Fev") + geom_density()
+#def0NoFev%>% ggplot(aes(x = deforestation0YearLag)) + labs(title = "No Fev") + geom_density()
+#def0Fev%>% ggplot(aes(x = deforestation0YearLag)) + labs(title = "Fev") + geom_density()
 
-d0nf <- melt(def0NoFev$deforestation0YearLag)
+#d0nf <- melt(def0NoFev$deforestation0YearLag)
 
-ggplot(melt(data.frame(def0NoFev$deforestation0YearLag,def0Fev$deforestation0YearLag)), mapping = aes (fill = variable, x = value)) + geom_density (alpha = .5)
+#ggplot(melt(data.frame(def0NoFev$deforestation0YearLag,def0Fev$deforestation0YearLag)), mapping = aes (fill = variable, x = value)) + geom_density (alpha = .5)
 ####
 basePlot <- base %>% mutate(h22 = factor(h22))
-basePlot %>% ggplot(aes(x = deforestation0YearLag), size = 10) + xlab("Deforestation in Survey Year") + labs(title = "Survey Year Deforestation by Malaria", subtitle = "Probability density curves") + scale_color_discrete(name="", labels = c("Malaria", "No Malaria")) + geom_density(aes(color=h22))
-
+doubleDensityPlot <- basePlot %>% ggplot(aes(x = basePlot$deforestation0YearLag), size = 10) + xlab("Percent Deforested in Survey Year") + labs(title = "Survey Year Deforestation by Malaria", subtitle = "Probability density curves") + scale_fill_discrete(name="", labels = c("Malaria", "No Malaria")) + geom_density(aes(fill=h22), alpha = .5)
+doubleDensityPlot
+ggsave("doubleDensityPlot.png", width = 6, height = 6)
 def0Fev <- basePlot %>% select(h22,deforestation0YearLag, deforestation1YearLag)
 
-tapply(basePlot$deforestation0YearLag, basePlot$h22, describe)
+#tapply(basePlot$deforestation0YearLag, basePlot$h22, describe)
 X <- split(def0Fev, basePlot$h22)
 
 stargazer(data.frame(X[1]), type = "latex")
 stargazer(data.frame(X[2]), type = "latex")
+
+
 #Old
 #full_model <- lm(h22~.-caseid - midx - v001, base.d)
