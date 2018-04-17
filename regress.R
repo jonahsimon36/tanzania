@@ -11,7 +11,7 @@ small_model <- lm(h22~deforestation0YearLag + deforestation1YearLag + deforestat
 middle_model <- lm(h22~deforestation0YearLag + deforestation1YearLag + deforestation2YearLag + deforestation3YearLag + treeCover2000 + factor(v006) + factor(v007), base)
 full_model <- lm(h22~deforestation0YearLag + deforestation1YearLag + deforestation2YearLag + deforestation3YearLag + treeCover2000 + factor(v006) + factor(v007) + v012 + factor(v024) + factor(v025) + v113 + v115 + factor(v116) + factor(v116) + v119 + v127 + v128 + v129 + v136 + v137 + v149 + v152 + v161 + factor(v190) + factor(ml0) + v201 + v218 + v717 + b8, base)
 
-summary(full_model)
+#summary(small_model)
 stargazer(small_model, middle_model, full_model, column.labels = c("Basic", "Partial", "Full"), omit = c("treeCover2000", "v006", "v007", "v012", "v024", "v025", "v113", "v115", "v116", "v119", "v127", "v128", "v129", "v136", "v137", "v149", "v152", "v161", "v190", "ml0", "v201", "v218", "v717", "b8"), omit.labels = c("Year Fixed Effects","Seasonality", "HH and indiv controls","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a"), omit.yes.no = c("No", "Yes"), type = "latex")
 
 #Create plots for poster

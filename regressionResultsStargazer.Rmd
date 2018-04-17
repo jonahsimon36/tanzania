@@ -66,26 +66,27 @@ knitr::opts_chunk$set(echo = FALSE)
  & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
 \cline{2-4} 
 \\[-1.8ex] & \multicolumn{3}{c}{Malaria (fever)} \\ 
- & Basic & Partial & Full \\ 
+
 
 \\[-1.8ex] & (1) & (2) & (3)\\ 
 \hline \\[-1.8ex] 
- deforestation0YearLag & $-$0.014$^{*}$ & $-$0.010 & $-$0.006 \\ 
-  & (0.007) & (0.008) & (0.008) \\ 
+deforestation0YearLag & $-$1.368$^{*}$ & $-$1.017 & $-$0.602 \\ 
+  & (0.750) & (0.755) & (0.822) \\ 
   & & & \\ 
- deforestation1YearLag & $-$0.002 & $-$0.006 & 0.011 \\ 
-  & (0.011) & (0.011) & (0.011) \\ 
+ deforestation1YearLag & $-$0.201 & $-$0.627 & 1.056 \\ 
+  & (1.070) & (1.076) & (1.138) \\ 
   & & & \\ 
- deforestation2YearLag & $-$0.005 & $-$0.011$^{*}$ & $-$0.009 \\ 
-  & (0.007) & (0.007) & (0.007) \\ 
+ deforestation2YearLag & $-$0.516 & $-$1.108$^{*}$ & $-$0.935 \\ 
+  & (0.665) & (0.672) & (0.714) \\ 
   & & & \\ 
- deforestation3YearLag & $-$0.001 & 0.011$^{*}$ & 0.009 \\ 
-  & (0.006) & (0.006) & (0.006) \\ 
+ deforestation3YearLag & $-$0.140 & 1.070$^{*}$ & 0.945 \\ 
+  & (0.587) & (0.612) & (0.645) \\ 
   & & & \\ 
  Constant & 0.203$^{***}$ & 0.160$^{***}$ & 0.176$^{***}$ \\ 
   & (0.007) & (0.012) & (0.046) \\ 
   & & & \\ 
 \hline \\[-1.8ex] 
+Regional Fixed Effects & No & Yes & Yes \\
 Year Fixed Effects & No & Yes & Yes \\ 
 Seasonality & No & Yes & Yes \\ 
 HH and indiv controls & No & No & Yes \\ 
