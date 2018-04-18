@@ -16,7 +16,7 @@ for (year in c(7,8,9,10)){
   potato <- sprintf("deforestation%sYearLag", 10 - year)
   assign(sprintf("DHS2010_LossYear%s", year), mutate(get(sprintf("DHS2010_LossYear%s", year)), !!potato := COUNT/102023)) # divide COUNT by 102093 to get percentage of cell deforested
   assign(sprintf("DHS2010_LossYear%s", year), select(get(sprintf("DHS2010_LossYear%s", year)),cluster,sprintf("deforestation%sYearLag", 10 - year)))
-  base10<- inner_join(base10,get(sprintf("DHS2010_LossYear%s", year)), by = c("v001" = "cluster"))
+  base10<- left_join(base10,get(sprintf("DHS2010_LossYear%s", year)), by = c("v001" = "cluster"))
 }
 
 # join tree cover to base 10
@@ -37,7 +37,7 @@ for (year in c(13,14,15,16)){
   potato <- sprintf("deforestation%sYearLag", 16 - year)
   assign(sprintf("DHS2015_LossYear%s", year), mutate(get(sprintf("DHS2015_LossYear%s", year)), !!potato := COUNT/102023)) # divide COUNT by 102093 to get percentage of cell deforested
   assign(sprintf("DHS2015_LossYear%s", year), select(get(sprintf("DHS2015_LossYear%s", year)),cluster,sprintf("deforestation%sYearLag", 16 - year)))
-  base15<- inner_join(base15,get(sprintf("DHS2015_LossYear%s", year)), by = c("v001" = "cluster"))
+  base15<- left_join(base15,get(sprintf("DHS2015_LossYear%s", year)), by = c("v001" = "cluster"))
 }
 
 # join tree cover to base 10
