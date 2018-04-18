@@ -70,20 +70,20 @@ knitr::opts_chunk$set(echo = FALSE)
 
 \\[-1.8ex] & (1) & (2) & (3)\\ 
 \hline \\[-1.8ex] 
-deforestation0YearLag & $-$1.368$^{*}$ & $-$1.017 & $-$0.602 \\ 
-  & (0.750) & (0.755) & (0.822) \\ 
+ deforestation0YearLag & $-$1.368$^{*}$ & $-$0.450 & $-$0.667 \\ 
+  & (0.750) & (0.901) & (0.903) \\ 
   & & & \\ 
- deforestation1YearLag & $-$0.201 & $-$0.627 & 1.056 \\ 
-  & (1.070) & (1.076) & (1.138) \\ 
+ deforestation1YearLag & $-$0.201 & $-$0.291 & $-$0.305 \\ 
+  & (1.070) & (1.304) & (1.307) \\ 
   & & & \\ 
- deforestation2YearLag & $-$0.516 & $-$1.108$^{*}$ & $-$0.935 \\ 
-  & (0.665) & (0.672) & (0.714) \\ 
+ deforestation2YearLag & $-$0.516 & 0.432 & 0.415 \\ 
+  & (0.665) & (0.895) & (0.894) \\ 
   & & & \\ 
- deforestation3YearLag & $-$0.140 & 1.070$^{*}$ & 0.945 \\ 
-  & (0.587) & (0.612) & (0.645) \\ 
+ deforestation3YearLag & $-$0.140 & 0.715 & 0.809 \\ 
+  & (0.587) & (0.744) & (0.746) \\ 
   & & & \\ 
- Constant & 0.203$^{***}$ & 0.160$^{***}$ & 0.176$^{***}$ \\ 
-  & (0.007) & (0.012) & (0.046) \\ 
+ Constant & 0.203$^{***}$ & 0.120 & 0.171$^{*}$ \\ 
+  & (0.007) & (0.086) & (0.096) \\ 
   & & & \\ 
 \hline \\[-1.8ex] 
 Regional Fixed Effects & No & Yes & Yes \\
@@ -92,10 +92,58 @@ Seasonality & No & Yes & Yes \\
 HH and indiv controls & No & No & Yes \\ 
 \hline \\[-1.8ex] 
 Observations & 11,487 & 11,487 & 11,487 \\ 
-R$^{2}$ & 0.001 & 0.007 & 0.033 \\ 
-Adjusted R$^{2}$ & 0.0005 & 0.005 & 0.027 \\ 
-Residual Std. Error & 0.397 (df = 11481) & 0.396 (df = 11470) & 0.392 (df = 11417) \\ 
-F Statistic & 2.061$^{*}$ (df = 5; 11481) & 4.926$^{***}$ (df = 16; 11470) & 5.604$^{***}$ (df = 69; 11417) \\ 
+R$^{2}$ & 0.001 & 0.047 & 0.055 \\ 
+Adjusted R$^{2}$ & 0.0005 & 0.032 & 0.038 \\ 
+Residual Std. Error & 0.397 (df = 11481) & 0.391 (df = 11308) & 0.390 (df = 11283) \\ 
+F Statistic & 2.061$^{*}$ (df = 5; 11481) & 3.115$^{***}$ (df = 178; 11308) & 3.215$^{***}$ (df = 203; 11283) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Apr 17, 2018 - 18:24:12
+\begin{table}[!htbp] \centering 
+  \caption{Regression Table} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Malaria (fever)} \\ 
+
+
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ deforestation0YearLag & $-$1.368$^{*}$ & $-$0.450 & $-$0.667 \\ 
+  & (0.750) & (0.901) & (0.903) \\ 
+  & & & \\ 
+ deforestation1YearLag & $-$0.201 & $-$0.291 & $-$0.305 \\ 
+  & (1.070) & (1.304) & (1.307) \\ 
+  & & & \\ 
+ deforestation2YearLag & $-$0.516 & 0.432 & 0.415 \\ 
+  & (0.665) & (0.895) & (0.894) \\ 
+  & & & \\ 
+ deforestation3YearLag & $-$0.140 & 0.715 & 0.809 \\ 
+  & (0.587) & (0.744) & (0.746) \\ 
+  & & & \\ 
+ Constant & 0.203$^{***}$ & 0.120 & 0.171$^{*}$ \\ 
+  & (0.007) & (0.086) & (0.096) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Regional Fixed Effects & No & Yes & Yes \\
+Year Fixed Effects & No & Yes & Yes \\ 
+Seasonality & No & Yes & Yes \\ 
+HH and indiv controls & No & No & Yes \\ 
+\hline \\[-1.8ex] 
+Observations & 11,487 & 11,487 & 11,487 \\ 
+R$^{2}$ & 0.001 & 0.047 & 0.055 \\ 
+Adjusted R$^{2}$ & 0.0005 & 0.032 & 0.038 \\ 
+Residual Std. Error & 0.397 (df = 11481) & 0.391 (df = 11308) & 0.390 (df = 11283) \\ 
+F Statistic & 2.061$^{*}$ (df = 5; 11481) & 3.115$^{***}$ (df = 178; 11308) & 3.215$^{***}$ (df = 203; 11283) \\ 
 \hline 
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
