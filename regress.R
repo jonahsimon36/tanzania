@@ -42,15 +42,23 @@ X <- split(def0Fev, basePlot$h22)
 stargazer(data.frame(X[1]), type = "latex")
 stargazer(data.frame(X[2]), type = "latex")
 
-MalariaDefDensityPlot <- data.frame(X[1]) %>% ggplot(aes(x = data.frame(X[1])$X0.deforestation0YearLag), size = 14) + xlab("Percent Deforested in Survey Year") + labs(title = "Survey Year Deforestation | Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "navy", color = "navy", alpha = .5)
+MalariaDefDensityPlot <- data.frame(X[1]) %>% ggplot(aes(x = data.frame(X[1])$X0.deforestation0YearLag), size = 14) + xlab("Percent Deforested") + labs(title = "Survey Year Deforestation | Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "navy", color = "navy", alpha = .5)
 MalariaDefDensityPlot
 ggsave("MalariaDefDensityPlot.png", width = 6, height = 6)
 
 
-NoMalariaDefDensityPlot <- data.frame(X[2]) %>% ggplot(aes(x = data.frame(X[2])$X1.deforestation0YearLag), size = 14) + xlab("Percent Deforested in Survey Year") + labs(title = "Survey Year Deforestation | No Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "maroon", color  = "maroon", alpha = .5)
+NoMalariaDefDensityPlot <- data.frame(X[2]) %>% ggplot(aes(x = data.frame(X[2])$X1.deforestation0YearLag), size = 14) + xlab("Percent Deforested") + labs(title = "Survey Year Deforestation | No Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "maroon", color  = "maroon", alpha = .5)
 NoMalariaDefDensityPlot
 ggsave("NoMalariaDefDensityPlot.png", width = 6, height = 6)
 
+MalariaDef1DensityPlot <- data.frame(X[1]) %>% ggplot(aes(x = data.frame(X[1])$X0.deforestation1YearLag), size = 14) + xlab("Percent Deforested") + labs(title = "Deforestation 1 Year Prior to Survey | Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "navy", color = "navy", alpha = .5)
+MalariaDef1DensityPlot
+ggsave("MalariaDef1DensityPlot.png", width = 6, height = 6)
+
+
+NoMalariaDef1DensityPlot <- data.frame(X[2]) %>% ggplot(aes(x = data.frame(X[2])$X1.deforestation1YearLag), size = 14) + xlab("Percent Deforested") + labs(title = "Deforestation 1 Year Prior to Survey | No Malaria", subtitle = "Probability Density Curve") + geom_density(fill = "maroon", color  = "maroon", alpha = .5)
+NoMalariaDef1DensityPlot
+ggsave("NoMalariaDef1DensityPlot.png", width = 6, height = 6)
 
 #Old
 #full_model <- lm(h22~.-caseid - midx - v001, base.d)

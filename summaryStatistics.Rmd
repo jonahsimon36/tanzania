@@ -19,6 +19,21 @@ Percent Deforested | No Fever  & 9,231 & 0.0036 & 0.006 & 0.00001 & 0.090 \\
 \end{tabular} 
 \end{table}
 
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Apr 17, 2018 - 00:40:07
+\begin{table}[!htbp] \centering 
+  \caption{Summary Statistics for Deforestation in Year Prior to Survey} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+Percent Deforested | Fever  & 2,256 & 0.0025 & 0.004 & 0.00001 & 0.042 \\
+Percent Deforested | No Fever  & 9,231 & 0.0027 & 0.004 & 0.00001 & 0.042 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
 
 
 <!-- % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu -->
