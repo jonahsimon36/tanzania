@@ -13,7 +13,7 @@ full_model <- lm(h22~deforestation0YearLag + deforestation1YearLag + deforestati
 
 
 #summary(small_model)
-stargazer(small_model, middle_model, full_model, column.labels = c("Basic", "Partial", "Full"), omit = c("treeCover2000", "v006", "v007", "v012", "v024", "v025", "v113", "v115", "v116", "v119", "v127", "v128", "v129", "v136", "v137", "v149", "v152", "v161", "v190", "ml0", "v201", "v218", "v717", "b8"), omit.labels = c("Year Fixed Effects","Seasonality", "HH and indiv controls","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a"), omit.yes.no = c("No", "Yes"), type = "text")
+stargazer(small_model, middle_model, full_model, column.labels = c("Basic", "Partial", "Full"), omit = c("treeCover2000", "v006", "v007", "v012", "v024", "v025", "v113", "v115", "v116", "v119", "v127", "v128", "v129", "v136", "v137", "v149", "v152", "v161", "v190", "ml0", "v201", "v218", "v717", "b8"), omit.labels = c("Year Fixed Effects","Seasonality", "HH and indiv controls","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a"), omit.yes.no = c("No", "Yes"), type = "latex")
 
 #Create plots for poster
 #base %>% ggplot(aes(x = deforestation0YearLag, y = h22)) + geom_point() + stat_smooth(method = "lm", col = "red")
